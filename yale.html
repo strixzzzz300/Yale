@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Discord Embed Settings -->
     <meta property="og:title" content="Yale Client V1">
-    <meta property="og:description" content="```ini
-ar [user] [msg]
+    <meta property="og:description" content="ar [user] [msg]
 arlist
 aroff [user]
 react [user] [emoji]
@@ -30,12 +29,13 @@ hushoff [user]
 purge [count]
 antiafk
 antiafkoff
-copypfp [user]```">
+copypfp [user]">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://i.pinimg.com/736x/07/53/02/0753021842af5ecb8748282d33ffdffc.jpg">
-    
+    <meta name="theme-color" content="#1E2A38"> <!-- Dark blue sidebar in Discord -->
+
     <title>Yale Client V1</title>
-    
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -43,31 +43,38 @@ copypfp [user]```">
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
         }
 
         .embed {
-            background: linear-gradient(135deg, #1E2A38, #0D1B2A);
-            border-left: 4px solid #7289DA;
+            background-color: #1E2A38; /* Dark blue background */
+            border-left: 4px solid #3498DB; /* Blue sidebar in browser */
             border-radius: 8px;
             padding: 20px;
             max-width: 500px;
             color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
         }
 
         .title {
-            font-size: 1.5em;
+            font-size: 1.6em;
             font-weight: bold;
-            color: #7289DA;
+            color: #3498DB;
             margin-bottom: 15px;
         }
 
         .commands {
             font-family: 'Courier New', monospace;
             line-height: 1.5;
+            margin-bottom: 15px;
             white-space: pre-line;
+        }
+
+        .image {
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -100,6 +107,7 @@ antiafk
 antiafkoff
 copypfp [user]
         </div>
+        <img src="https://i.pinimg.com/736x/07/53/02/0753021842af5ecb8748282d33ffdffc.jpg" alt="Embed Image" class="image">
     </div>
 </body>
 </html>
